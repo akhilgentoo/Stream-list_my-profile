@@ -135,11 +135,12 @@ st.write(
 # --- Projects & Accomplishments ---
 st.write('\n')
 st.subheader("Projects & Accomplishments")
+
 st.write(
     """
-"🏆 Best Employee Reward - Recognized for outstanding performance and contributions to the team",
-"🏆 Automation Award -  Acknowledged for driving automation initiatives within the organization",
-"🏆 Spot Award  - Received for exceptional teamwork and problem-solving skills",
-"🏆 Automation Excellence Award  - Led the team's transition to automated and cloud-based solutions"
+- ► 🏆 Best Employee Reward - Recognized for outstanding performance and contributions to the team
+- ► 🏆 Automation Award -  Acknowledged for driving automation initiatives within the organization"
+- ► 🏆 Spot Award  - Received for exceptional teamwork and problem-solving skills 
+- ► 🏆 Automation Excellence Award  - Led the team's transition to automated and cloud-based solutions
 """
 )
