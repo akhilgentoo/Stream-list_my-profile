@@ -98,7 +98,7 @@ st.write("---")
 
 # --- JOB 1
 st.write("🚧", "**Senior System Analyst | Carelon Global Solution**")
-st.write("02/2020 - Present")
+st.write("02/2022 - Present")
 st.write(
     """
 - ► Developed Multiple pipelines for cloud deployment
@@ -135,7 +135,11 @@ st.write(
 # --- Projects & Accomplishments ---
 st.write('\n')
 st.subheader("Projects & Accomplishments")
+st.write(
+    """
 "🏆 Best Employee Reward - Recognized for outstanding performance and contributions to the team",
 "🏆 Automation Award -  Acknowledged for driving automation initiatives within the organization",
 "🏆 Spot Award  - Received for exceptional teamwork and problem-solving skills",
 "🏆 Automation Excellence Award  - Led the team's transition to automated and cloud-based solutions"
+"""
+)
