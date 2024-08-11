@@ -7,29 +7,27 @@ from PIL import Image
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"
+resume_file = current_dir / "assets" / "akhilkumar2024_Resume.pdf"
+profile_pic = current_dir / "assets" / "akhil.jpg"
 
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV | John Doe"
-PAGE_ICON = ":wave:"
-NAME = "John Doe"
+PAGE_TITLE = "Digital CV | Akhilkumar"
+PAGE_ICON = ":random:"
+NAME = "Akhilkumar"
 DESCRIPTION = """
-Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
+Senior System Analyst, assisting enterprises by supporting Devops and Infrastructure-driven decision-making.
 """
-EMAIL = "johndoe@email.com"
+EMAIL = "akeelkumar9068@gmail.com"
 SOCIAL_MEDIA = {
-    "YouTube": "https://youtube.com/c/codingisfun",
-    "LinkedIn": "https://linkedin.com",
-    "GitHub": "https://github.com",
-    "Twitter": "https://twitter.com",
+    "LinkedIn": "https://www.linkedin.com/in/akeelkumar",
+    "GitHub": "https://github.com/akhilgentoo",
 }
 PROJECTS = {
-    "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
-    "🏆 Income and Expense Tracker - Web app with NoSQL database": "https://youtu.be/3egaMfE9388",
-    "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
-    "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
+    "🏆 Best Employee Reward - Recognized for outstanding performance and contributions to the team",
+    "🏆 Automation Award -  Acknowledged for driving automation initiatives within the organization",
+    "🏆 Spot Award  - Received for exceptional teamwork and problem-solving skills",
+    "🏆 Automation Excellence Award  - Led the team's transition to automated and cloud-based solutions"
 }
 
 
@@ -61,11 +59,11 @@ with col2:
     st.write("📫", EMAIL)
 
 
-# --- SOCIAL LINKS ---
-st.write('\n')
-cols = st.columns(len(SOCIAL_MEDIA))
-for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f"[{platform}]({link})")
+# # --- SOCIAL LINKS ---
+# st.write('\n')
+# cols = st.columns(len(SOCIAL_MEDIA))
+# for index, (platform) in enumerate(SOCIAL_MEDIA.items()):
+#     cols[index].write(f"[{platform}]")
 
 
 # --- EXPERIENCE & QUALIFICATIONS ---
@@ -73,8 +71,8 @@ st.write('\n')
 st.subheader("Experience & Qulifications")
 st.write(
     """
-- ✔️ 7 Years expereince extracting actionable insights from data
-- ✔️ Strong hands on experience and knowledge in Python and Excel
+- ✔️ 5 Years expereince Devops and Infrastructure Engineer
+- ✔️ Strong hands on experience and knowledge in OCP,Bamboo,Docker,Kubernetes,Linux,Splunk,EKS,Ansible
 - ✔️ Good understanding of statistical principles and their respective applications
 - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
 """
@@ -86,10 +84,9 @@ st.write('\n')
 st.subheader("Hard Skills")
 st.write(
     """
-- 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
-- 📊 Data Visulization: PowerBi, MS Excel, Plotly
-- 📚 Modeling: Logistic regression, linear regression, decition trees
-- 🗄️ Databases: Postgres, MongoDB, MySQL
+- 👩‍💻 Programming: Python (django,Streamlit),Bash,SQL
+- 📊 Data Visulization: PowerBi, MS Excel
+- 🗄️ Databases: Oracle, MySQL
 """
 )
 
@@ -100,37 +97,37 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 1
-st.write("🚧", "**Senior Data Analyst | Ross Industries**")
+st.write("🚧", "**Senior System Analyst | Carelon Global Solution**")
 st.write("02/2020 - Present")
 st.write(
     """
-- ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-- ► Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented A/B tests to generate 15% more client leads
-- ► Redesigned data model through iterations that improved predictions by 12%
+- ► Developed Multiple pipelines for cloud deployment
+- ► Improve the performances of JVM’s and clusters
+- ► Written 50+ Ansible playbook for automation strategy
 """
 )
 
 # --- JOB 2
 st.write('\n')
-st.write("🚧", "**Data Analyst | Liberty Mutual Insurance**")
-st.write("01/2018 - 02/2022")
+st.write("🚧", "**System Analyst  | Legato Health**")
+st.write("06/2019 - 07/2022")
 st.write(
     """
-- ► Built data models and maps to generate meaningful insights from customer data, boosting successful sales eﬀorts by 12%
-- ► Modeled targets likely to renew, and presented analysis to leadership, which led to a YoY revenue increase of $300K
-- ► Compiled, studied, and inferred large amounts of data, modeling information to drive auto policy pricing
+- ► Built Multiple Dashboards for monitoring for multiple Apps to avoid outages
+- ► Certificate generation and renewal external and internal
+- ► Prompt Alert setups and Webhook to MS Team for Monitoring
 """
 )
 
 # --- JOB 3
 st.write('\n')
-st.write("🚧", "**Data Analyst | Chegg**")
-st.write("04/2015 - 01/2018")
+st.write("🚧", "**Assc Software Engineer | UST**")
+st.write("01/2018 - 01/2019")
 st.write(
     """
-- ► Devised KPIs using SQL across company website in collaboration with cross-functional teams to achieve a 120% jump in organic traﬃc
-- ► Analyzed, documented, and reported user survey results to improve customer communication processes by 18%
-- ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
+- ► Devised Data load Batch automation
+- ► Prompt Alert setups and Webhook to MS Team for Monitoring
+- ► API Monitoring of external services and coordination activities 
 """
 )
 
@@ -138,6 +135,7 @@ st.write(
 # --- Projects & Accomplishments ---
 st.write('\n')
 st.subheader("Projects & Accomplishments")
-st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
+"🏆 Best Employee Reward - Recognized for outstanding performance and contributions to the team",
+"🏆 Automation Award -  Acknowledged for driving automation initiatives within the organization",
+"🏆 Spot Award  - Received for exceptional teamwork and problem-solving skills",
+"🏆 Automation Excellence Award  - Led the team's transition to automated and cloud-based solutions"
