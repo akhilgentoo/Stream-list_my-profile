@@ -59,11 +59,10 @@ with col2:
     st.write("📫", EMAIL)
 
 
-# # --- SOCIAL LINKS ---
-# st.write('\n')
-# cols = st.columns(len(SOCIAL_MEDIA))
-# for index, (platform) in enumerate(SOCIAL_MEDIA.items()):
-#     cols[index].write(f"[{platform}]")
+st.write('\n')
+cols = st.columns(len(SOCIAL_MEDIA))
+for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+    cols[index].write(f"[{platform}]({link})")
 
 
 # --- EXPERIENCE & QUALIFICATIONS ---
